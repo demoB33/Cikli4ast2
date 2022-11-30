@@ -39,6 +39,30 @@ public class Main {
             System.out.println("Год " + y + " Численность населения составляет " + numbPopulation );
 
         }
+        //ДЗ-2 Задание1,2 и 3
+        System.out.println("Задание 1, 2 и 3 ");
+        int sumDeposit = 15000;
+        int month = 1;
+        for (; month <= 12 * 9 ; month++){
+            sumDeposit += sumDeposit * 0.07;
+
+            if (month % 6 == 0 ){
+                System.out.println("Кол-во месяцев " + month + " промежуточная сумма " + sumDeposit);
+            }
+
+        }
+        //Задание 4
+         System.out.println("Задание 4 ");
+        int firstFriday = 1;
+
+        for (int f = firstFriday ; f <= 31; f= f + 7){
+            System.out.printf("Сегодня пятница %s-е число. Необходимо подготовить отчет \n ", f);
+        }
+
+
+
+
+
 
 
     }
