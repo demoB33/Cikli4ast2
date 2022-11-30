@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -39,6 +41,57 @@ public class Main {
             System.out.println("Год " + y + " Численность населения составляет " + numbPopulation );
 
         }
+        //ДЗ-2 Задание1,2 и 3
+        System.out.println("Задание 1, 2 и 3 ");
+        int sumDeposit = 15000;
+        int month = 1;
+        for (; month <= 12 * 9 ; month++){
+            sumDeposit += sumDeposit * 0.07;
+
+            if (month % 6 == 0 ){
+                System.out.println("Кол-во месяцев " + month + " промежуточная сумма " + sumDeposit);
+            }
+
+        }
+        //Задание 4
+         System.out.println("Задание 4 ");
+        int firstFriday = 1;
+
+        for (int f = firstFriday ; f <= 31; f= f + 7){
+            System.out.printf("Сегодня пятница %s-е число. Необходимо подготовить отчет \n ", f);
+        }
+
+        //ДЗ-3 Задание 1
+        System.out.println("Задание 1 :");
+        int firstYear = 0 ;
+        int nowYear = LocalDate.now().getYear();
+        int startYear = nowYear - 200;
+        int finishYear = nowYear + 100;
+        int period = 79;
+        while (firstYear <= finishYear){
+            if(firstYear >= startYear){
+                System.out.println(firstYear);
+            }
+            firstYear = firstYear + period;
+        }
+
+        //Задание 2
+        System.out.println("Задание 2 :");
+        int two = 2;
+        int productOfNumbers = 0;
+        for (int t = 1; t <= 10; t++ ){
+            productOfNumbers =  two * t;
+            System.out.println(two + "*" + t + "=" + productOfNumbers);
+
+        }
+
+
+
+
+
+
+
+
 
 
     }
